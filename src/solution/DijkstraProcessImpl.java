@@ -2,6 +2,12 @@ package solution;
 
 import internal.Environment;
 
+/**
+ * Distributed Dijkstra algorithm implementation.
+ * All functions are called from the single main thread.
+ *
+ * @author <First-Name> <Last-Name> // todo: replace with your name
+ */
 public class DijkstraProcessImpl implements DijkstraProcess {
     private final Environment env;
 
