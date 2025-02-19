@@ -59,7 +59,7 @@ data class MyMessage(val key: Int, val value: String) : java.io.Serializable
 
 Размер каждого отправленного сообщения не должен превышать двухсот байт.
 
-Заметьте, что метод `onMessage(int senderPid, Object message)`в качестве аргумента принимает не описанный
+Заметьте, что метод `onMessage(int senderPid, Object message)` в качестве аргумента принимает не описанный
 вами тип сообщения, а `java.lang.Object`. Используйте приведения типов вида
 
 ```java 

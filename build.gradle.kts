@@ -1,6 +1,6 @@
 plugins {
+    kotlin("jvm") version "2.1.10"
     java
-    kotlin("jvm") version "1.8.10"
 }
 
 repositories {
@@ -28,5 +28,5 @@ sourceSets.test {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
