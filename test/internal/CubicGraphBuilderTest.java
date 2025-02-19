@@ -1,6 +1,7 @@
 package internal;
 
 import org.junit.jupiter.api.Test;
+import system.CubicGraphBuilder;
 
 import java.util.HashMap;
 import java.util.HashSet;

@@ -3,6 +3,9 @@ package internal;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import system.Pair;
+import system.RandomGraphBuilder;
+import system.SequentialDijkstra;
 
 import java.util.function.Function;
 

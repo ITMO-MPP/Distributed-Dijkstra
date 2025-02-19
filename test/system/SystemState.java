@@ -1,4 +1,4 @@
-package internal;
+package system;
 
 public class SystemState {
     private boolean isFinished;

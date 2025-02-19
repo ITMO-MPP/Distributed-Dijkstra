@@ -1,6 +1,8 @@
 package internal;
 
 import org.junit.jupiter.api.Test;
+import system.CubicGraphBuilder;
+import system.SequentialDijkstra;
 
 import java.util.ArrayList;
 import java.util.List;

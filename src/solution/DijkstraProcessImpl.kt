@@ -1,6 +1,4 @@
-package solution;
-
-import internal.Environment;
+package solution
 
 /**
  * Distributed Dijkstra algorithm implementation.
@@ -8,25 +6,16 @@ import internal.Environment;
  *
  * @author <First-Name> <Last-Name> // todo: replace with your name
  */
-public class DijkstraProcessImpl implements DijkstraProcess {
-    private final Environment env;
-
-    public DijkstraProcessImpl(Environment env) {
-        this.env = env;
+class DijkstraProcessImpl(private val env: Environment) : DijkstraProcess {
+    override fun onComputationStart() {
+        TODO("Not implemented")
     }
 
-    @Override
-    public void onMessage(int senderPid, Object message) {
-        throw new UnsupportedOperationException("Not implemented");
+    override fun onMessage(srcId: Int, message: Any) {
+        TODO("Not implemented")
     }
 
-    @Override
-    public Long getDistance() {
-        throw new UnsupportedOperationException("Not implemented");
-    }
-
-    @Override
-    public void onComputationStart() {
-        throw new UnsupportedOperationException("Not implemented");
+    override val distance: Long? get() {
+        TODO("Not implemented")
     }
 }

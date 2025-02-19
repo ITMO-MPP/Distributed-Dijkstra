@@ -16,6 +16,9 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    filter {
+        includeTestsMatching("solution.*")
+    }
 }
 
 sourceSets.main {

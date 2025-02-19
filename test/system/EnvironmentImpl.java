@@ -1,10 +1,12 @@
-package internal;
+package system;
 
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+
+import solution.Environment;
 
 public class EnvironmentImpl implements Environment {
     private final SystemState systemState;
@@ -39,8 +41,8 @@ public class EnvironmentImpl implements Environment {
     }
 
     @Override
-    public void send(int destinationPid, Object message) {
-        assert destinationPid >= 0 && destinationPid != processId;
+    public void send(int dstId, Object message) {
+        assert dstId >= 0 && dstId != processId;
         if (systemState.isExecutionFinished()) {
             throw new IllegalStateException("Execution already finished");
         }
@@ -60,7 +62,7 @@ public class EnvironmentImpl implements Environment {
             System.out.println("Has message " + message + " of size " + messageLength);
         }
         assert messageLength <= systemState.maxMessageSize;
-        messageBus.addNewMessage(processId, destinationPid, message);
+        messageBus.addNewMessage(processId, dstId, message);
     }
 
 }
